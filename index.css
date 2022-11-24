@@ -5,6 +5,11 @@ body {
   font-size: 1.2rem;
   box-sizing: border-box;
 }
+/* Custom FONT */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('Norse-Bold.otf'); /* IE9 Compat Modes */
+}
 
 .main {
   display: flex;
@@ -12,9 +17,10 @@ body {
   width: 100vw;
 }
 
+/* Left side of the page (IMAGE) */
 .left-container {
   position: relative;
-  width: 60vw;
+  width: 50vw;
   min-width: 345px;
   height: 100vh;
   background: url(backImg.jpg);
@@ -26,7 +32,7 @@ body {
 .logo-container {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.527);
-  line-height: 2rem;
+  line-height: 0.1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +44,14 @@ body {
 }
 
 .logo-text {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 50px;
+  font-family: 'CustomFont', 'Courier New', Courier, monospace;
+  font-size: 100px;
   color: white;
+}
+
+/* Right side of the page (FORM) */
+.right-container {
+  padding-left: 40px;
+  margin-top: 150px;
+  margin-right: 200px;
 }
